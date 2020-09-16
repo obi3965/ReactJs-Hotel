@@ -1,7 +1,8 @@
 import React from 'react'
 
 import Hero from '../../Hero/Hero.js'
-import Services from '../../Services'
+import Services from '../../Services-section/Services'
+import FeaturedRooms from '../../featuredRooms.js/FeaturedRooms'
 
 /**
 * @author
@@ -18,9 +19,11 @@ const Home = (props) => {
     <div className="container">
       <Services />   
     </div>
+
+    <FeaturedRooms />
         
     
-      {/* {children.props} */}
+      
     </>
    )
 

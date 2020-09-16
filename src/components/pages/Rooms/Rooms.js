@@ -1,15 +1,16 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-/**
-* @author
-* @function Rooms
-**/
+import './Rooms.css'
 
-const Rooms = (props) => {
-  return(
-    <div>Rooms</div>
-   )
+export default class Rooms extends Component {
+  
 
- }
-
-export default Rooms
+  render() {
+    return (
+      <>
+       <div>rooms</div> 
+     
+      </>
+    )
+  }
+}

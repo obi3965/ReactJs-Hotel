@@ -10,7 +10,7 @@ body{
   margin: 0;
   padding: 0;
 }
-/* .home,
+ /* .home,
 .services,
 .products,
 .sign-up {
@@ -19,10 +19,10 @@ body{
   align-items: center;
   justify-content: center;
   font-size: 3rem;
-}
+} */
 
-.services {
-  background-image: url('/images/img-2.jpg');
+.Rooms {
+  background-image: url('/img/home.svg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -30,8 +30,8 @@ body{
   font-size: 100px;
 }
 
-.products {
-  background-image: url('/images/img-1.jpg');
+.Contacts {
+  background-image: url('/img/foods.svg');
   background-position: center;
   background-size: fill;
   background-repeat: no-repeat;
@@ -39,28 +39,13 @@ body{
   font-size: 100px;
 }
 
-.sign-up {
+/* .sign-up {
   background-image: url('/images/img-8.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
-} */
+} 
 
-
-.fade-appear,
-.fade-enter{
-  opacity: 0;
-  z-index: 1;
-}
-
-.fade-appear-active,
-.fade-enter.fade-enter-active{
-  opacity: 1;
-   transition: opacity 300ms linear 150ms;
-}
-
-.fade-exit{
-  opacity: 1;
-}
+ */

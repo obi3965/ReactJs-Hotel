@@ -14,14 +14,14 @@
 .box-1, .box-2, .box-3{
     height: auto;
     width: 100%;
-    box-shadow: 2px 3px 18px 3px rgba(0,0,0,0.2) !important;
+    box-shadow: 2px 3px 20px -3px rgba(0,0,0,0.1) !important;
     transition: all ease-in-out 300ms; 
     padding-bottom: 10px;
     margin-top: 40px;
     border-radius: 8px;
 }
 .box-2{
-    border: 2px solid #6C63FF;
+    border: 2px solid #6C63FF !important;
 }
 .box-1:hover, .box-2:hover, .box-3:hover{
     transform: translate(0px, -6px);
