@@ -3,27 +3,13 @@ import { Link } from 'react-router-dom'
 
 import './Navbar.css'
 
-/**
-* @author
-* @function Navbar
-**/
+
 
 const Navbar = (props) => {
     const [ click, setClick ] = useState(false)
-    // const [Button, setButton] = useState(true);
-
     const handleClick = () => setClick(!click)
     const closeMobileMenu = () => setClick(false)
     
-    // const showButton = () =>{
-    //     if(window.innerWidth <= 960){
-    //         setButton(false)
-    //     }else{
-    //         setButton(true)
-    //     }
-    // }
-
-    // window.addEventListener('resize', showButton)
   return(
     <>
      <nav className='navbar shadow-sm'>

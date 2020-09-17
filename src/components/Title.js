@@ -1,17 +1,12 @@
-import React from 'react'
-import "./Loader.css";
-/**
-* @author
-* @function Title
-**/
+import React from "react";
 
-const Title = (props) => {
-  return(
+const Title = ({ title }) => {
+  return (
     <div>
-        <h3>featured rooms</h3>
+      <h3>{title}</h3>
+      <div />
     </div>
-   )
+  );
+};
 
- }
-
-export default Title
+export default Title;

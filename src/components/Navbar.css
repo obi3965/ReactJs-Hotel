@@ -23,7 +23,7 @@
     justify-self: start;
     margin-left: 20px;
     cursor: pointer;
-    text-decoration: none;
+    text-decoration: none !important;
     font-size: 2.4rem;
     display: flex;
     align-items: center;

@@ -1,27 +1,10 @@
 import React from "react";
-import "./Loader.css";
-/**
- * @author
- * @function Loader
- **/
-
-const Loader = (props) => {
+import loadingGif from "../images/loader.gif";
+const Loader = () => {
   return (
-    <div className="loader">
-      
-        <div className="row text-center">
-          <div className="col-md-12">
-            <div class="background">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </div>
-        </div>
-     
+    <div className="loading">
+      <h4>rooms data loading....</h4>
+      <img src={loadingGif} alt="" />
     </div>
   );
 };

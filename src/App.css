@@ -10,42 +10,70 @@ body{
   margin: 0;
   padding: 0;
 }
- /* .home,
-.services,
-.products,
-.sign-up {
-  display: flex;
-  height: 90vh;
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
-} */
-
-.Rooms {
-  background-image: url('/img/home.svg');
+.defaultHero, .roomsHero
+ {
+  background-image: url("./images/home.svg");
+  height: 450px;
+  background-repeat: no-repeat !important;
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
+  width: 100% !important;
+  position: absolute;
+  margin-top: 50px;
+  top: 10%;
+}
+.roomsHero {
+  background-image: url("./images/b.svg");
+  height: 470px;
+  background-repeat: no-repeat !important;
+  background-position:right, center;
+  background-size: cover !important;
+  width: 100% !important;
+  position: absolute;
+  /* background-color: blueviolet; */
+  top: 10%;
+  object-fit: cover;
+  display: block;
 }
 
-.Contacts {
-  background-image: url('/img/foods.svg');
-  background-position: center;
-  background-size: fill;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
+.home-banner, .rooms-banner{
+  background-color: rgba(108, 99, 255,0.5); 
+  width: 100% !important;
+  height: 80vh;
 }
 
-/* .sign-up {
-  background-image: url('/images/img-8.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+.banner-title{
+ margin-top: 35%;
+ width: 95%;
+}
+.banner-title h1{
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #6C63FF;
+  letter-spacing: 1.4px;
+}
+.banner-title p{
+  font-size: 22px;
+  text-align: justify;
+  word-break: keep-all;
+}
+.btn{
+  background-color: #6C63FF;
+  width: 180px;
+  box-shadow: 0px 7px 8px 0px rgba(0,0,0,0.3) !important;
+  transition: all ease-in-out 300ms; 
+  padding: 10px !important;
+  margin-top: 10px;
+  border: none !important;
   color: #fff;
-  font-size: 100px;
-} 
-
- */
+  text-transform: capitalize;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+.btn:hover{
+   background-color: none !important;
+   transform: translate(0px, -4px);
+   outline: none !important;
+   color: #fff;
+}

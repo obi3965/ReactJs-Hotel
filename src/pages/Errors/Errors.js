@@ -9,7 +9,7 @@ const Errors = (props) => {
   return(
     <div>
       <div>no such a room could be found</div>
-      <Link to="/rooms" className="btn-outline">back to home</Link>
+      <Link to="/" className="btn-outline">back to home</Link>
     </div>
     
   )

@@ -11,10 +11,7 @@ body{
     height: 75vh;
     
 }
-.banner-section{
-   background-color: rgb(108, 99, 255, 0.3); 
-   width: 100% !important;
-}
+
 .hom-banner{
     display: flex !important;
     justify-content: center !important;
@@ -63,4 +60,16 @@ body{
     transform: translate(0px, -4px);
     outline: none !important;
     color: #fff;
+}
+
+/* .roomsHero {
+    background-image: url("../images/home.svg");
+    min-height: 60vh;
+    background-repeat: no-repeat;
+  } */
+
+.defaultHero
+ {
+  background-image: url("../images/home.svg") center/cover no-repeat;
+  height: 60vh;
 }
