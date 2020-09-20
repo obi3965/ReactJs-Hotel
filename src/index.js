@@ -1,17 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter  } from 'react-router-dom';
 import App from './App';
-// import { RoomProvider } from './context'
+import { RoomProvider } from './context';
+
 
 ReactDOM.render(
+  <React.Fragment>
+
   
-    <Router>
-  <>
+  <RoomProvider>
+  <BrowserRouter>
     <App />
-  </>
-</Router>,
-  
+  </BrowserRouter>
+</RoomProvider>
+</React.Fragment>,
   
   document.getElementById('root')
 );

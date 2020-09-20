@@ -64,9 +64,12 @@
   .nav-links:hover {
     border-bottom: 4px solid #6C63FF;
     transition: all 0.2s ease-out;
+   
+  }
+  .nav-links.is-active{
+    border-bottom: 4px solid #6C63FF;
     
   }
-  
   .fa-bars {
     color: #6C63FF;
   }
@@ -78,12 +81,17 @@
   .menu-icon {
     display: none;
   }
-  
+  .is-active{
+    color: #6C63FF !important;
+  }
   @media screen and (max-width: 960px) {
     .NavbarItems {
       position: relative;
     }
-  
+    .nav-links.is-active{
+      border-bottom: none;
+      
+    }
     .nav-menu {
       display: flex;
       flex-direction: column;
@@ -112,22 +120,22 @@
     }
   
     .nav-links:hover {
-      background-color: #6C63FF !important;
-      color: #242424;
+      color: #000;
       border-radius: 0;
+      border: none !important;
     }
   
     .navbar-logo {
       position: absolute;
-      top: 0;
+      top: -12px;
       left: 0;
-      transform: translate(25%, 50%);
+      transform: translate(15%, 50%);
     }
   
     .menu-icon {
       display: block;
       position: absolute;
-      top: 0;
+      top: -5px;
       right: 0;
       transform: translate(-100%, 60%);
       font-size: 1.8rem;

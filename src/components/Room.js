@@ -1,18 +1,20 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
-
+import defaultImg from '../images/room-1.jpeg'
 import './Room.css'
 export default function Room({ room }) {
  
-  let { name, slug, images, price } = room
+  // console.log(room)
+ let { name, slug, images, price } = room
  
    return (
             <div className="col-md-4">
-             <div className="content">
+              
+              <div className="content">
                <div className="content-overlay"></div>
                <div className="image">
-               <img src={images[0]} alt="rooms" />
+               <img src={images[0] || defaultImg } alt="single rooms" />
                <div className="desc">
                  <h6 className="content-title">${price}</h6>
                <p className="content-text">per night</p>
@@ -25,7 +27,8 @@ export default function Room({ room }) {
                </div>
             
 
-             </div>
+             </div> 
+             
            </div>
           
       

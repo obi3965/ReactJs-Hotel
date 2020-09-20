@@ -18,9 +18,9 @@ body{
   background-position: center;
   background-size: cover;
   width: 100% !important;
-  position: absolute;
+  /* position: absolute; */
   margin-top: 50px;
-  top: 10%;
+  margin-top: 10%;
 }
 .roomsHero {
   background-image: url("./images/b.svg");
@@ -30,7 +30,6 @@ body{
   background-size: cover !important;
   width: 100% !important;
   position: absolute;
-  /* background-color: blueviolet; */
   top: 10%;
   object-fit: cover;
   display: block;
@@ -43,7 +42,7 @@ body{
 }
 
 .banner-title{
- margin-top: 35%;
+ margin-top: 30%;
  width: 95%;
 }
 .banner-title h1{
@@ -76,4 +75,10 @@ body{
    transform: translate(0px, -4px);
    outline: none !important;
    color: #fff;
+}
+
+
+
+.single-room-image img{
+  width: 100% !important;
 }

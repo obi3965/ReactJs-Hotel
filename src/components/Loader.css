@@ -2,4 +2,9 @@
     text-transform: capitalize;
     text-align: center;
     margin-top: 3rem;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
   }
