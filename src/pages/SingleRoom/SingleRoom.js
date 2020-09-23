@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 // import Banner from "../../components/Banner";
 // import Hero from "../../components/Hero";
 import { RoomContext } from "../../context";
+import Footer from "../../components/Footer";
 //import Errors from '../Errors/Errors';
 export default class SingleRoom extends Component {
   constructor(props) {
@@ -111,6 +112,7 @@ export default class SingleRoom extends Component {
        
         </div>
        
+       <Footer/>
      
       </>
     );

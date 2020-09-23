@@ -1,0 +1,17 @@
+.featured-rooms-title h3{
+    text-align: center;
+    font-weight: bolder !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 40px !important;
+    color: #000;
+    margin-bottom: 8px;
+}
+.underline-1{
+    border-bottom: 4px solid #6C63FF;
+    width: 22%;
+    margin: auto;
+}
+.featured-rooms-box{
+    margin-top: 50px;
+}

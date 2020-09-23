@@ -1,9 +1,4 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
-}
+
 
 body{
   font-family: 'Roboto', sans-serif;
@@ -12,62 +7,50 @@ body{
 }
 .defaultHero, .roomsHero
  {
-  background-image: url("./images/home.svg");
-  height: 450px;
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+   url("https://images.pexels.com/photos/751268/pexels-photo-751268.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  height: 90vh;
   background-repeat: no-repeat !important;
-  background-position: center;
+  background-position: top center;
   background-size: cover;
   width: 100% !important;
-  /* position: absolute; */
-  margin-top: 50px;
-  margin-top: 10%;
+  position: relative;
+  
+ 
 }
 .roomsHero {
-  background-image: url("./images/b.svg");
-  height: 470px;
+  background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),
+   url("https://images.pexels.com/photos/1438834/pexels-photo-1438834.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  height: 90vh;
   background-repeat: no-repeat !important;
   background-position:right, center;
   background-size: cover !important;
   width: 100% !important;
-  position: absolute;
-  top: 10%;
-  object-fit: cover;
-  display: block;
+ 
+}
+.banner-items{
+  position: absolute !important;
+  top: 40%;
+  left: 20%;
+  transform: translateY(-40%, -20%) !important;
+  max-width: 640px !important;
+
 }
 
-.home-banner, .rooms-banner{
-  background-color: rgba(108, 99, 255,0.5); 
-  width: 100% !important;
-  height: 80vh;
-}
 
-.banner-title{
- margin-top: 30%;
- width: 95%;
-}
-.banner-title h1{
-  text-transform: uppercase;
-  font-weight: 900;
-  color: #6C63FF;
-  letter-spacing: 1.4px;
-}
-.banner-title p{
-  font-size: 22px;
-  text-align: justify;
-  word-break: keep-all;
-}
+
 .btn{
   background-color: #6C63FF;
-  width: 180px;
+  width: 200px;
   box-shadow: 0px 7px 8px 0px rgba(0,0,0,0.3) !important;
   transition: all ease-in-out 300ms; 
-  padding: 10px !important;
-  margin-top: 10px;
+  padding: 14px !important;
+  margin-top: 25px;
   border: none !important;
   color: #fff;
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-weight: 500;
-  letter-spacing: 1px;
+  letter-spacing: 1.4px;
   font-size: 18px;
 }
 .btn:hover{

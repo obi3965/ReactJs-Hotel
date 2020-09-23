@@ -4,34 +4,39 @@ import Hero from "../../components/Hero";
 import { Link } from "react-router-dom";
 import AllRooms from '../../components/AllRooms'
 import "./Rooms.css";
+import Footer from "../../components/Footer";
 export default class Rooms extends Component {
   render() {
     return (
       <>
         <div className="rooms-banner">
-          <div className="container banner">
-            <div className="row">
-              <div className="col-md-6">
+          
+            <Hero hero="roomsHero"></Hero>
+              
                 <Banner
                   title="enjoy our luxury rooms for all"
-                  subtitle="hotel rooms for whole family, all year round. and a luxury stay
+                  subtitle="Hotel rooms for whole family, all year round. and a luxury stay
                for all. a place where you can enjoy the environment"
                 >
                   <Link to="/" className="btn">
                     return home
                   </Link>
                 </Banner>
-              </div>
-              <div className="col-md-6">
-                <Hero hero="roomsHero"></Hero>
-              </div>
-            </div>
-          </div>
+              
+               
+               
+            
+            
+          
         </div>
 
         <div className="container">
           <AllRooms />
         </div>
+
+        
+          <Footer/>
+        
       </>
     );
   }

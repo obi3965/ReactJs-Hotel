@@ -20,7 +20,7 @@ import './services.css'
         },
         {
             image:"../img/pool.svg",
-            title:"foods",
+            title:"pools",
             text:"we have provided free pool opportunity for our all type of guests during the,which you can't get in other places."
         },
     
