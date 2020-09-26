@@ -1,8 +1,10 @@
 import React from 'react'
 import Room from '../components/Room'
+import SubscirbeForm from '../components/Subscribe-form'
 export default function Roomslist({ rooms }) {
     return (
         <>
+        < div className="roomlist">
             <div className="container">
                 <div className="row">
                     {rooms.map(item =>{
@@ -14,6 +16,9 @@ export default function Roomslist({ rooms }) {
                 })}
                 </div>
             </div>
+        </div>
+
+          <SubscirbeForm />
         </>
     )
 }

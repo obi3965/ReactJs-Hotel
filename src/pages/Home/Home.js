@@ -4,7 +4,7 @@ import Hero from "../../components/Hero";
 import Services from "../../components/Services";
 import FeaturedRooms from "../../components/FeaturedRoom";
 import Banner from "../../components/Banner";
-import './Home.css'
+// import './Home.css'
 import Testimonial from "../../components/Testimonial";
 import SubscribeForm from "../../components/Subscribe-form";
 import Footer from "../../components/Footer";

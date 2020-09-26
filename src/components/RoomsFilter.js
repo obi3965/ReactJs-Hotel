@@ -2,7 +2,7 @@ import React from "react";
 import { useContext } from "react";
 import { RoomContext } from "../context";
 import Title from "./Title";
-
+import './styles/Room.css'
 let getUnique = (items, value) => {
     return [...new Set(items.map(item => item[value]))]
 }
@@ -20,7 +20,7 @@ export default function RoomsFilter({ rooms }) {
   // console.log(context)
   //get unique types
   let types = getUnique(rooms, 'type')
-  types = ['all', ...types]
+  types = ['All', ...types]
   types = types.map((item, index)=>{
     return<option key={index} value={item}>
     {item}
@@ -28,6 +28,7 @@ export default function RoomsFilter({ rooms }) {
   })
   // get unique capacity
   let people = getUnique(rooms, "capacity");
+ 
   people = people.map((item, index) => (
     <option key={index} value={item}>
       {item}
@@ -35,11 +36,15 @@ export default function RoomsFilter({ rooms }) {
   ));
   return (
     <>
-      <div className="container">
-        <Title title="search your rooms" />
-        <div className="row">
+      <div className="container pt-5">
+        <div className="search-title">
+          <h1 id="title"><Title title="search your rooms"  /></h1>
+        
+        </div>
+        
+        <div className="row mt-5">
           
-            <div className="form-group col-md-3">
+            <div className="form-group col-md-3 col-sm-6 col-xs-6">
               <label for="type">All</label>
               <select
             name="type"
@@ -52,21 +57,22 @@ export default function RoomsFilter({ rooms }) {
           </select>
             </div>
 
-             <div className="form-group col-md-3">
+             <div className="form-group col-md-3 col-sm-6 col-xs-6">
           <label htmlFor="capacity">Guests</label>
           <select
+            
             name="capacity"
             id="capacity"
             onChange={handleChange}
             className="form-control"
-            value={capacity}
+           
           >
             {people}
           </select>
         </div> 
           
-        <div className="form-group col-md-3">
-          <label htmlFor="price">room size </label>
+        <div className="form-group col-md-3 col-sm-6 col-xs-6">
+          <label htmlFor="price">Room size </label>
           <div className="size-inputs">
             <input
               type="number"
@@ -85,28 +91,35 @@ export default function RoomsFilter({ rooms }) {
           </div>
         </div>
 
-        <div className="form-group col-md-3">
-          <div className="single-extra">
+        <div className="form-group col-md-3 col-sm-6 col-xs-6">
+          <div className="check">
+            <div className="form-group form-check">
             <input
               type="checkbox"
               name="breakfast"
               id="breakfast"
               checked={breakfast}
               onChange={handleChange}
+              className="form-check-input"
             />
-            <label htmlFor="breakfast">breakfast</label>
+            <label htmlFor="breakfast">Breakfast</label>
           </div>
-          <div className="single-extra">
+          <div className="form-group form-check">
             <input
               type="checkbox"
               name="pets"
               checked={pets}
               onChange={handleChange}
+              className="form-check-input"
             />
-            <label htmlFor="breakfast">pets</label>
+            <label htmlFor="breakfast">Pets</label>
           </div>
+          </div>
+          
         </div>
+        
         </div>
+        
       </div>
     </>
   );

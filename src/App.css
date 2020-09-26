@@ -18,6 +18,7 @@ body{
   
  
 }
+
 .roomsHero {
   background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),
    url("https://images.pexels.com/photos/1438834/pexels-photo-1438834.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
@@ -28,6 +29,11 @@ body{
   width: 100% !important;
  
 }
+
+.roomlist{
+  padding-bottom: 30px;
+}
+
 .banner-items{
   position: absolute !important;
   top: 40%;
@@ -64,4 +70,82 @@ body{
 
 .single-room-image img{
   width: 100% !important;
+}
+
+
+.banner-items h1{
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #ffdd00;
+  letter-spacing: 1.4px;
+  font-size: 56px;
+}
+.banner-desc p{
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    word-break: keep-all;
+
+} 
+@media(max-width:640px){
+  .defaultHero{
+    height: 56vh;
+    
+  }
+  .banner-items{
+    top: 40%;
+    left: 40%;
+    transform: translate(-40%, -40%) !important;
+    width: 70% !important;
+  }
+  .btn{
+    width: 140px !important;
+    padding: 11px !important;
+    font-size: 14px !important;
+    margin-top: 15px;
+  }
+  .banner-items h1{
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #ffdd00;
+    letter-spacing: 1.4px;
+    font-size: 23px;
+  }
+  .banner-desc p{
+      font-size: 16px;
+      color: rgb(255, 255, 255);
+      text-align: justify;
+      word-break: keep-all;
+  
+  }
+}
+
+@media(min-width:767px) and (max-width:1023px){
+  .defaultHero{
+    height: 60vh;
+  }
+  .banner-items{
+    width: 64%;
+    top: 30%;
+    left: 10%;
+    transform: translateY(-30%, -15%);
+  }
+  .banner-items h1{
+    font-size: 40px;
+  }
+}
+
+@media(min-width:768px) and (max-width:1024px){
+  .defaultHero{
+    height: 45vh !important;
+  }
+  .banner-items h1{
+    font-size: 45px;
+  }
+  .banner-items{
+    width: 64%;
+    top: 22%;
+    left: 10%;
+    transform: translateY(-22%, -10%);
+  }
 }

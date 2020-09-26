@@ -2,13 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import defaultImg from "../images/room-1.jpeg";
-import "./Room.css";
+import "./styles/Room.css";
 export default function Room({ room }) {
   // console.log(room)
   let { name, slug, images, price } = room;
 
   return (
-    <div className="col-md-4">
+    <div className="col-md-4 mt-4" >
       <div className="content">
         <div className="content-overlay"></div>
         <div className="image">

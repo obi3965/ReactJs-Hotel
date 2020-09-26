@@ -3,7 +3,7 @@ import Banner from "../../components/Banner";
 import Hero from "../../components/Hero";
 import { Link } from "react-router-dom";
 import AllRooms from '../../components/AllRooms'
-import "./Rooms.css";
+
 import Footer from "../../components/Footer";
 export default class Rooms extends Component {
   render() {

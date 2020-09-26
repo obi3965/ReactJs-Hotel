@@ -1,10 +1,12 @@
 .newsletter{
-   height: 200px;
+   height: 140px;
 }
 #subscribe{
     width: 500px !important;
-    height: 40px;
-    border: 1px solid gray;
+    height: 45px;
+    border: 1px solid #6C63FF;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
 }
 .form-inline{
    margin: 30px auto !important;
@@ -13,14 +15,16 @@
 }
 .btn-3{
     width: 150px;
-    padding: 8px;
+    padding: 10.2px;
     border: none !important;
     outline: none !important;
     margin-left: -2px;
     background-color: #6C63FF;
     color: #ffffff;
     text-transform: capitalize;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 .subscribe-title h1{
     text-align: center;
@@ -29,4 +33,6 @@
     letter-spacing: 1.5px;
     margin-top: 20px;
     font-size: 30px;
+    color: #000;
+    opacity: .86;
 }

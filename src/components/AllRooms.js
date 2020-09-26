@@ -22,26 +22,3 @@ function AllRooms({ context }){
    
 
 export default withRoomConsumer(AllRooms)
-// export default function AllRooms() {
-//     return (
-//      <RoomConsumer>
-//          { value => {
-//              console.log(value)
-//              let  { loading, sortedRooms, rooms } = value
-
-//              if(loading) {
-//                  return <Loading />
-//              }
-//              return (
-//                  <div>
-//                      hello from rooms
-//                      <RoomsFilter rooms = { rooms } />
-//                      <Roomslist rooms = { sortedRooms } />
-//                  </div>
-//              )
-//          }}
-          
-//      </RoomConsumer>
-//     )
-    
-// }

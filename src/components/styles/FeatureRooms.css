@@ -5,13 +5,14 @@
     letter-spacing: 2px;
     font-size: 40px !important;
     color: #000;
-    margin-bottom: 8px;
+    margin:30px 0px;
+    opacity: .86;
 }
 .underline-1{
     border-bottom: 4px solid #6C63FF;
     width: 22%;
-    margin: auto;
+    margin:-15px auto;
 }
 .featured-rooms-box{
-    margin-top: 50px;
+    margin-top: 40px;
 }

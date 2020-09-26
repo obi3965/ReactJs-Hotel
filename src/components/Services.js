@@ -1,6 +1,6 @@
  import React from 'react'
 //import state from '../data/services'
-import './services.css'
+import './styles/services.css'
 
 
    
@@ -37,7 +37,7 @@ import './services.css'
                <div className="row offset-md">
                {this.state.services.map((item, index) => {
               return (
-                <div key={index} className="col-12 col-md-6 col-lg-4">
+                <div key={index} className="col-sm-12 col-md-4 col-lg-4">
                   <div className="box-1">
                     <div className="box-1-items">
                       <img src={ item.image } alt="foods" />

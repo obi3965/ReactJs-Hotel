@@ -123,6 +123,8 @@ export default class Testimonial extends Component {
             desc:
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui reprehenderit itaque eos quibusdam nihil nostrum?",
             phone: <i class="fas fa-phone"></i>,
+            twitter:<i className="fa fa-twitter"></i>,
+            facebook:<i className="fa fa-facebook"></i>
           },
           {
             id: 2,
@@ -130,13 +132,19 @@ export default class Testimonial extends Component {
             image: "../img/female-3.jpg",
             desc:
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui reprehenderit itaque eos quibusdam nihil nostrum?",
-          },
+              phone: <i class="fas fa-phone"></i>,
+              twitter:<i className="fa fa-twitter"></i>,
+              facebook:<i className="fa fa-facebook"></i>
+            },
           {
             id: 3,
             title: "cook",
             image: "../img/profile-3.jpg",
             desc:
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui reprehenderit itaque eos quibusdam nihil nostrum?",
+              phone: <i class="fas fa-phone"></i>,
+              twitter:<i className="fa fa-twitter"></i>,
+              facebook:<i className="fa fa-facebook"></i>
           },
           {
             id: 4,
@@ -144,6 +152,9 @@ export default class Testimonial extends Component {
             image: "https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_05.png",
             desc:
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui reprehenderit itaque eos quibusdam nihil nostrum?",
+              phone: <i class="fas fa-phone"></i>,
+              twitter:<i className="fa fa-twitter"></i>,
+              facebook:<i className="fa fa-facebook"></i>
           },
           {
             id: 5,
@@ -151,6 +162,9 @@ export default class Testimonial extends Component {
             image: "https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png",
             desc:
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui reprehenderit itaque eos quibusdam nihil nostrum?",
+              phone: <i class="fas fa-phone"></i>,
+              twitter:<i className="fa fa-twitter"></i>,
+              facebook:<i className="fa fa-facebook"></i>
           },
           {
             id: 6,
@@ -158,6 +172,9 @@ export default class Testimonial extends Component {
             image: "https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_02.png",
             desc:
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui reprehenderit itaque eos quibusdam nihil nostrum?",
+              phone: <i class="fas fa-phone"></i>,
+              twitter:<i className="fa fa-twitter"></i>,
+              facebook:<i className="fa fa-facebook"></i>
           },
         ],
       };
@@ -169,9 +186,9 @@ export default class Testimonial extends Component {
       infinite: true,
       slidesToShow: 3,
       slidesToScroll: 1,
-      // autoplay: true,
-      speed: 1000,
-      autoplaySpeed: 2000,
+      autoplay: true,
+      speed: 1500,
+      autoplaySpeed: 3000,
       pauseOnHover: true,
       
       
@@ -219,10 +236,18 @@ export default class Testimonial extends Component {
                    <img src={ item.image } alt=""/>
                 </div>
              
-             <h1>{item.title}</h1>
-             <p>{ item.desc }</p>
+             <h4>{item.title}</h4>
+             <div className="item-desc">
+               <p>{ item.desc }</p>
+             </div>
+             
               </div>
              
+               <div className="testimonial-links">
+                 <span>{item.phone}</span>
+                  <span>{item.facebook}</span>
+                 <span>{item.twitter}</span>
+               </div>
            </div>
             )}
            

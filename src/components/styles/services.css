@@ -1,8 +1,9 @@
 .services{
     background-color: #000;
     margin-top: -45px;
-    height: 600px;
+    height: auto;
     padding-top: 20px;
+    padding-bottom: 30px;
 }
 .service-title h1{
     text-align: center;
@@ -59,4 +60,21 @@
     font-size: 18px;
     text-align: justify;
     word-break: keep-all;
+}
+
+@media(max-width:640px){
+    .service-title h1{
+        font-size: 28px;
+    }
+    .services{
+        height: auto;
+    }
+}
+@media(min-width:767) and (max-width:1023px){
+    .service-title h1{
+        font-size: 28px;
+    }
+    .services{
+        height: auto;
+    }
 }

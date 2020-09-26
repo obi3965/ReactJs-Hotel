@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
-import './Navbar.css'
+import './styles/Navbar.css'
 
 
 
@@ -38,7 +38,7 @@ const Navbar = (props) => {
             </li>
             <li className='nav-item'>
               <NavLink
-                to='/contacts'
+                to='/contact'
                 className='nav-links' activeClassName="is-active"
                 onClick={closeMobileMenu}
               >

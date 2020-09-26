@@ -42,11 +42,15 @@ box-shadow: 5px 7px 9px -4px rgb(0,0,0,0.5);
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
-    background-color: #6C63FF;
+    background-image: linear-gradient(rgba(108, 99, 255,0.8),rgba(108, 99, 255,0.8)),
+     url('https://images.pexels.com/photos/3814193/pexels-photo-3814193.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 25px;
     clip-path: polygon(0 0, 100% 0%, 100% 89%, 0 100%);
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+    
 }
 .item-img img{
     width: 100px;
@@ -86,4 +90,32 @@ box-shadow: 5px 7px 9px -4px rgb(0,0,0,0.5);
     border-bottom: 3px solid #6C63FF;
     width: 15%;
     margin: auto;
+}
+
+.item-box h4{
+text-align: center;
+text-transform: capitalize;
+margin-top: 10px;
+}
+.item-desc{
+    
+    width: 87%;
+    margin: auto;
+}
+.item-desc p{
+    text-align: justify;
+    word-break: break-all;
+    font-size: 15px;
+}
+
+.testimonial-links{
+    background-color: rgb(230, 230, 230);
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.testimonial-links span i{
+    color: #6C63FF !important;
+    cursor: pointer;
 }

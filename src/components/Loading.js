@@ -1,6 +1,6 @@
 import React from "react";
 import loadingGif from "../images/loader.gif";
-import './Loader.css'
+import './styles/Loader.css'
 const Loading = () => {
   return (
   <div className="col">
