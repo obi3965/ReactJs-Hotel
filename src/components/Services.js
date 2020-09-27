@@ -1,5 +1,5 @@
  import React from 'react'
-//import state from '../data/services'
+
 import './styles/services.css'
 
 

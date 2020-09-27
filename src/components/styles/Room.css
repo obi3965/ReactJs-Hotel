@@ -166,3 +166,12 @@
   margin-bottom: -50px;
   /* background-color: blue; */
   }
+
+  @media(min-width:320px) and (max-width:640px){
+    #title{
+      
+      text-align: center;
+      
+    }
+    
+  }

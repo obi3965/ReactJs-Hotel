@@ -1,109 +1,3 @@
-// import React, { Component } from "react";
-// import Slider from "react-slick";
-
-// class Testimonial extends Component {
-//   constructor(props) {
-//     super(props);
-//     this.play = this.play.bind(this);
-//     this.pause = this.pause.bind(this);
-//   }
-//   state = {
-//     items: [
-//       {
-//         id: 1,
-//         title: "supporter",
-//         image: "../img/profile-2.jpg",
-//         desc:
-//           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui reprehenderit itaque eos quibusdam nihil nostrum?",
-//         phone: <i class="fas fa-phone"></i>,
-//       },
-//       {
-//         id: 2,
-//         title: "receptionist",
-//         image: "../img/female-3.jpg",
-//         desc:
-//           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui reprehenderit itaque eos quibusdam nihil nostrum?",
-//       },
-//       {
-//         id: 3,
-//         title: "cook",
-//         image: "../img/profile-3.jpg",
-//         desc:
-//           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui reprehenderit itaque eos quibusdam nihil nostrum?",
-//       },
-//       {
-//         id: 4,
-//         title: "electric",
-//         image: "https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_05.png",
-//         desc:
-//           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui reprehenderit itaque eos quibusdam nihil nostrum?",
-//       },
-//       {
-//         id: 5,
-//         title: "cleaner",
-//         image: "https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png",
-//         desc:
-//           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui reprehenderit itaque eos quibusdam nihil nostrum?",
-//       },
-//       {
-//         id: 6,
-//         title: "serviceman",
-//         image: "https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_02.png",
-//         desc:
-//           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui reprehenderit itaque eos quibusdam nihil nostrum?",
-//       },
-//     ],
-//   };
-//   render() {
-
-//      const { items } = this.state;
-//      const settings = {
-//       dots: true,
-//       infinite: true,
-//       slidesToShow: 3,
-//       slidesToScroll: 1,
-//       autoplay: true,
-//       autoplaySpeed: 2000
-//     };
-//     return (
-//       <div className="testimonial">
-//         <div className="container-fluid">
-//         <Slider ref={slider => (this.slider = slider)} {...settings}>
-//           <div>
-//             <h3>1</h3>
-//           </div>
-//           <div>
-//             <h3>2</h3>
-//           </div>
-//           <div>
-//             <h3>3</h3>
-//           </div>
-//           <div>
-//             <h3>4</h3>
-//           </div>
-//           <div>
-//             <h3>5</h3>
-//           </div>
-//           <div>
-//             <h3>6</h3>
-//           </div>
-//         </Slider>
-//         </div>
-//       </div>
-//     );
-//   }
-// }
-
-// // {items.map((item) => (  
-// //   <Item key={item.id} className="col-box">
-// //        1
-// //   </Item>
- 
-// //  ))}
-
-// export default Testimonial;
-
-
 
 import React, { Component } from "react";
 import Slider from "react-slick";
@@ -185,7 +79,7 @@ export default class Testimonial extends Component {
       dots: true,
       infinite: true,
       slidesToShow: 3,
-      slidesToScroll: 1,
+      slidesToScroll: 3,
       autoplay: true,
       speed: 1500,
       autoplaySpeed: 3000,
@@ -194,7 +88,16 @@ export default class Testimonial extends Component {
       
       responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 1300,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 1023,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
@@ -202,8 +105,18 @@ export default class Testimonial extends Component {
             dots: true
           }
         },
+       
         {
-          breakpoint: 600,
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 768,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
@@ -211,7 +124,14 @@ export default class Testimonial extends Component {
           }
         },
         {
-          breakpoint: 480,
+          breakpoint: 481,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 320,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1

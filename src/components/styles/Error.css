@@ -1,0 +1,30 @@
+.error-banner{
+    background-image: linear-gradient(rgba(0, 0,0,0.7),rgba(0, 0, 0,0.7)),
+     url('../../images/error.svg');
+    height: 100vh !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.error-items{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%)
+}
+.error-items h1{
+    color:  red !important;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.btn-outline{
+    width: 170px;
+    padding: 10px;
+    background-color: #6C63FF;
+    color: #ffffff !important;
+    margin: auto;
+    display: flex !important;
+    justify-content: center;
+    text-decoration: none !important;
+    margin-top: 30px;
+}

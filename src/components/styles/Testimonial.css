@@ -11,6 +11,9 @@
     position: relative;
     clip-path: polygon(0 11%, 100% 0%, 100% 89%, 0 100%);
 }
+.container1{
+    width: 100% !important;
+}
 .item{
 background-color: #ffffff;
 height: auto;
@@ -116,6 +119,43 @@ margin-top: 10px;
     align-items: center;
 }
 .testimonial-links span i{
-    color: #6C63FF !important;
+    color: rgb(108, 99, 255) !important;
     cursor: pointer;
 }
+ @media(min-width:320px) and (max-width:640px){
+    .item{
+       min-width: 100%;
+        margin: auto !important;
+        
+    }
+    .testimonial{
+        height: 660px;
+    }
+    .testimonial-title h2{
+        font-size: 25px !important;
+        font-weight: 700;
+    }
+    
+}
+
+
+@media(min-width:767px) and (max-width:1023px){
+    .item{ 
+        min-width: 98% !important;
+        margin: auto !important;
+        margin-left: 4px !important;
+    }
+    .testimonial{
+        height: 685px;
+    }
+}
+
+@media(min-width:768px) and (max-width:1024px){
+    .testimonial{
+        height: 680px;
+    }
+    .item{
+        margin-left: 4px !important;
+        
+    }
+} 

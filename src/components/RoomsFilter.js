@@ -11,7 +11,7 @@ export default function RoomsFilter({ rooms }) {
   let {
     handleChange,
     type,
-    capacity,
+    // capacity,
     minSize,
     maxSize,
     breakfast,
@@ -38,7 +38,7 @@ export default function RoomsFilter({ rooms }) {
     <>
       <div className="container pt-5">
         <div className="search-title">
-          <h1 id="title"><Title title="search your rooms"  /></h1>
+          <h1 id="title"><Title title="search rooms"  /></h1>
         
         </div>
         

@@ -37,18 +37,18 @@
    
    
 }
-.box-1-items img, .box-2-items img, .box-3-items img{
+.box-1-items img{
     width: 100%;
     height: 100px;
     border-radius: 50%;
     margin-top: 15px;
 }
-.box-1-desc, .box-2-desc, .box-3-desc{
+.box-1-desc{
   width: 80%;
   margin: 45px auto;
   color: #ffffff;
 }
-.box-1-desc h3, .box-2-desc h3, .box-3-desc h3 {
+.box-1-desc h3 {
     text-align: center;
     text-transform: uppercase;
     font-weight: 600;
@@ -62,19 +62,8 @@
     word-break: keep-all;
 }
 
-@media(max-width:640px){
-    .service-title h1{
-        font-size: 28px;
-    }
-    .services{
-        height: auto;
-    }
-}
+
 @media(min-width:767) and (max-width:1023px){
-    .service-title h1{
-        font-size: 28px;
-    }
-    .services{
-        height: auto;
-    }
+   
+    
 }

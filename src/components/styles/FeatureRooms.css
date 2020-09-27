@@ -16,3 +16,10 @@
 .featured-rooms-box{
     margin-top: 40px;
 }
+
+@media(max-width:640px){
+    .featured-rooms-title h3{
+        font-size: 22px !important;
+        font-weight: 700 !important;
+    }
+}

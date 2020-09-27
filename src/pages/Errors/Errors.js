@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import '../../components/styles/Error.css'
 /**
 * @author
 * @function Errors
@@ -7,9 +8,12 @@ import { Link } from 'react-router-dom'
 
 const Errors = (props) => {
   return(
-    <div>
-      <div>no such a room could be found</div>
+    <div className="error-banner">
+      <div className="error-items">
+        <h1>Page Found</h1>
       <Link to="/" className="btn-outline">back to home</Link>
+      </div>
+      
     </div>
     
   )
